@@ -17,7 +17,7 @@ class CalculatorTestSuite(unittest.TestCase):
 
     def test_sum_first_argument_is_string_returns_error_message(self):
         calculator = Calculator()
-        self.assertEqual('Error, first argument is a string value.', calculator.sum('someText', 3.3))
+        self.assertEqual("unsupported operand type(s) for +: 'float' and 'str'", calculator.sum('someText', 3.3))
 
     def test_sum_second_argument_is_string_returns_error_message(self):
         calculator = Calculator()
@@ -45,7 +45,7 @@ class CalculatorTestSuite(unittest.TestCase):
 
     def test_power_of_two_with_an_integer(self):
         calculator = Calculator()
-        self.assertEqual(36, calculator.poweroftwo(6))
+        self.assertEqual(36, calculator.poweroftwo(6)) 
 
     def test_power_of_two_with_a_float(self):
         calculator = Calculator()
