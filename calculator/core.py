@@ -9,7 +9,7 @@ class Calculator:
     def sum(self, a, b):
         return a+b
 
-    def multiply(self, a, b=None):
+    def multiplication(self, a, b=None):
         if b is None:
             return a*a
 
@@ -17,4 +17,7 @@ class Calculator:
 
     def poweroftwo(self, value):
         return 2 ** value
+
+    def division(self, a, b):
+        return a/b
 
