@@ -1,5 +1,6 @@
 # -*- coding: utf-8 -*-
 from math import factorial
+import roman
 
 class Calculator:
 
@@ -58,3 +59,6 @@ class Calculator:
             return "Error, first argument is a string value."
 
         return factorial(value)
+    
+    def roman_to_latin (self, value):
+    	return roman.fromRoman(value)
