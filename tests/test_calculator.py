@@ -150,6 +150,13 @@ class CalculatorTestSuite(unittest.TestCase):
         self.assertEqual(3000, calculator.roman_to_latin('MMM'))
         self.assertEqual(3999, calculator.roman_to_latin('MMMCMXCIX'))
 
+    def test_latin_number_translation(self):
+        calculator = Calculator()
+        self.assertEqual('CCCXXX', calculator.latin_to_roman(330))
+
+    def test_roman_to_latin_uknown_letter (self):
+        calculator = Calculator()
+        self.assertEqual ('Error, uknown letter.', calculator.roman_to_latin('XXЙ'))
 
 if __name__ == '__main__':
     unittest.main()
